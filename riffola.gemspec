@@ -19,13 +19,9 @@ Gem::Specification.new do |s|
 
   # Development dependencies (tests, debugging)
   # Test framework
-  s.add_development_dependency 'rspec'
+  s.add_development_dependency 'rspec', '~> 3.10'
   # To add simple hex ways to dump strings
-  s.add_development_dependency 'hex_string'
-  # To debug
-  s.add_development_dependency 'byebug'
-  # To check code syntax
-  s.add_development_dependency 'rubocop'
-  # To profile performance
-  s.add_development_dependency 'ruby-prof'
+  s.add_development_dependency 'hex_string', '~> 1.0'
+  # Automatic semantic releasing
+  s.add_development_dependency 'sem_ver_components', '~> 0.0'
 end
