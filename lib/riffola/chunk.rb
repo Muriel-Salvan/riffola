@@ -66,7 +66,7 @@ module Riffola
         file.seek(@offset, IO::SEEK_CUR)
         chunk_name = file.read(4)
       end
-      puts "[WARNING] - Doesn't look like a valid chunk name: #{chunk_name}" if @warnings && !chunk_name =~ /^[\w ]{4}$/
+      puts "[WARNING] - Doesn't look like a valid chunk name: #{chunk_name}" if @warnings && !(chunk_name =~ /^[\w ]{4}$/)
       chunk_name
     end
 
